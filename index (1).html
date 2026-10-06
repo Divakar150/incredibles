@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ta"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>குறள் 594 – Thirukkural Interactive Experience</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@500;700&family=Mukta+Malar:wght@400;600&family=Cormorant+Garamond:ital,wght@1,500&display=swap">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="brand" onclick="go('home')">குறள் 594<small>Thirukkural Experience</small></div><button id="bg" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+<nav><a data-v="home">Home</a><a data-v="video">▶ Video</a><a data-v="game">🎮 Game</a><a data-v="learn">📖 Learn</a><a data-v="quiz">❓ Quiz</a><a data-v="chat">💬 Ask</a></nav></header>
+<section class="view hero on" id="v-home"><canvas id="hc"></canvas><small>திருக்குறள் · அதிகாரம் 60 · ஊக்கமுடைமை</small>
+<h1>ஆக்கம் அதர்வினாய்ச் செல்லும்<br>அசைவிலா ஊக்க முடையா னுழை.</h1>
+<em>Wealth finds its own way to the one whose effort never falters.</em>
+<button class="btn" onclick="go('video')">▶ Watch the Story</button><button class="btn o" onclick="go('game')">🎮 Play the Game</button>
+<div class="grid"><div class="tile" onclick="go('video')"><i>🎬</i><h3>Animated Video</h3><p>A 55-second visual story of a man who digs a well while the whole village gives up.</p></div>
+<div class="tile" onclick="go('game')"><i>⛏️</i><h3>Dig the Well</h3><p>Keep your spirit alive, dispel doubt and sloth, and dig until water bursts forth.</p></div>
+<div class="tile" onclick="go('learn')"><i>📜</i><h3>Learn the Kural</h3><p>Meaning, word-by-word breakdown, Thiruvalluvar and life lessons.</p></div>
+<div class="tile" onclick="go('quiz')"><i>🏆</i><h3>Test Yourself</h3><p>A five-question quiz on the kural and the Thirukkural.</p></div></div>
+<div class="stats"><div><b>1330</b><span>Couplets</span></div><div><b>133</b><span>Chapters</span></div><div><b>3</b><span>Books</span></div><div><b>2000+</b><span>Years old</span></div></div></section>
+<section class="view" id="v-video"><h2 class="t">The Story of Kural 594</h2><p class="sub">A man keeps digging while the village leaves — and wealth finds its way to him.</p><div id="vslot"></div>
+<div class="chips"><button onclick="seek(1)">1 · Drought</button><button onclick="seek(2)">2 · Days pass</button><button onclick="seek(3)">3 · Wealth searches</button><button onclick="seek(4)">4 · Water bursts</button><button onclick="seek(5)">5 · Meaning</button><button onclick="seek(0)">↻ Restart</button><button onclick="document.getElementById('st').requestFullscreen&&document.getElementById('st').requestFullscreen()">⛶ Fullscreen</button></div><div class="panelx" id="vp" style="margin-top:22px"><h3 style="color:var(--gold);margin-bottom:10px">🔊 AI Voice Narration</h3>
+<p class="sub" style="margin-bottom:14px">The captions are read aloud as the video plays, using your device's built-in speech voices.</p>
+<div class="vrow"><button class="btn" id="vt" style="margin:0">🔊 Voice: On</button>
+<label>Language <select id="vl"><option value="ta">தமிழ் (Tamil)</option><option value="en">English</option><option value="both">Tamil + English</option></select></label>
+<label>Speed <input type="range" id="vr" min="0.6" max="1.3" step="0.05" value="0.9"></label></div>
+<p id="vs2" class="sub" style="margin:12px 0 0;font-size:.9rem"></p></div></section>
+<section class="view" id="v-game"><h2 class="t">⛏️ Dig the Well</h2><p class="sub">Be like the man in the kural: never let your effort falter. Tap/click to dig, press SPACE, and click the dark clouds of doubt before they reach you.</p>
+<div class="bars"><div>ஊக்கம் · Spirit<div class="bar2"><i id="eb" style="background:linear-gradient(90deg,#ff9d00,#ffe27a)"></i></div></div><div>ஆழம் · Depth<div class="bar2"><i id="db" style="background:linear-gradient(90deg,#3aa0d8,#9fdcff)"></i></div></div></div>
+<div id="gw"><canvas id="gc" width="800" height="450"></canvas><div id="gov"></div></div><button class="btn" id="dg">⛏ DIG!</button></section>
+<section class="view" id="v-learn"><h2 class="t">About Kural 594</h2><p class="sub">Thirukkural · Book of Wealth (பொருட்பால்) · Chapter 60 — ஊக்கமுடைமை (Possession of Zeal)</p>
+<div class="panelx"><div class="kt">ஆக்கம் அதர்வினாய்ச் செல்லும் அசைவிலா<br>ஊக்க முடையா னுழை.</div><p class="tr2">Aakkam adharvinaaych chellum asaivilaa / Ookka mudaiyaan uzhai.</p>
+<p><b>Meaning:</b> Prosperity asks the way and goes to the one who has unshakable zeal. Wealth does not wait to be chased by the lazy — it seeks out the person whose determination never wavers.</p></div>
+<div class="panelx"><h3>Word by word</h3><table><tr><th>Word</th><th>Meaning</th></tr><tr><td>ஆக்கம்</td><td>Wealth, prosperity, progress</td></tr><tr><td>அதர்</td><td>Path, way</td></tr><tr><td>வினாய்ச் செல்லும்</td><td>Goes asking (enquiring the way)</td></tr><tr><td>அசைவிலா</td><td>Unshaken, never wavering</td></tr><tr><td>ஊக்கம் உடையான்</td><td>One who has zeal, drive and spirit</td></tr><tr><td>உழை</td><td>To (his) place, near him</td></tr></table></div>
+<div class="two"><div class="panelx"><h3>Thiruvalluvar</h3><p>The Tamil poet-sage credited with the Thirukkural, a classic of ethics and practical wisdom composed in short two-line couplets called <i>kurals</i>. Its teachings are universal, so it is read and quoted far beyond Tamil Nadu.</p></div>
+<div class="panelx"><h3>The Thirukkural</h3><p>1,330 couplets in 133 chapters of ten kurals each, divided into three books: Aram (virtue, 38 chapters), Porul (wealth and governance, 70 chapters) and Inbam (love, 25 chapters).</p></div></div>
+<div class="panelx"><h3>Life lessons</h3><div class="grid" style="margin:12px 0 0"><div><b style="color:var(--gold)">🔥 Consistency beats talent</b><p>Small daily effort outlasts bursts of motivation.</p></div><div><b style="color:var(--gold)">🌱 Results lag effort</b><p>The well looked empty for days; the water was always coming.</p></div><div><b style="color:var(--gold)">🚪 Opportunity seeks the ready</b><p>Wealth passed the sleeper and found the digger.</p></div><div><b style="color:var(--gold)">🛡 Guard your spirit</b><p>Doubt and sloth are the real obstacles — not the soil.</p></div></div></div></section>
+<section class="view" id="v-quiz"><h2 class="t">🏆 Kural Quiz</h2><p class="sub" id="qp"></p><div class="panelx" id="qb"></div></section>
+<section class="view" id="v-chat"><h2 class="t">💬 Ask about Kural 594</h2><p class="sub">Ask in Tamil or English — type or use the 🎤 mic. Answers can be read aloud.</p>
+<div class="panelx"><div id="cm"></div><div class="chips" id="cs" style="margin:12px 0 0"></div>
+<div class="cin"><input id="ci2" placeholder="Ask a question… / கேள்வியைக் கேளுங்கள்…" autocomplete="off"><select id="cl"><option value="ta-IN">🎤 தமிழ்</option><option value="en-IN">🎤 English</option></select><button id="cmic" title="Speak">🎤</button><button id="csd" class="go">Send ➤</button></div>
+<div class="vrow" style="margin-top:14px;font-size:.9rem"><label><input type="checkbox" id="crd" checked> 🔊 Read answers aloud</label><button id="cai" class="mini">🤖 Connect AI (optional)</button><span id="cst" style="opacity:.7"></span></div></div></section>
+<footer>திருக்குறள் 594 · Interactive Experience · Built with HTML, CSS &amp; JavaScript</footer>
+
+<div id="st" data-s="0">
+<svg viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="gd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0a85c"/><stop offset="1" stop-color="#fbe0a8"/></linearGradient>
+<linearGradient id="gg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4fa9e6"/><stop offset="1" stop-color="#e2f4ff"/></linearGradient>
+<radialGradient id="go"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#ffe27a"/><stop offset="1" stop-color="#ff9d00"/></radialGradient>
+<filter id="bl"><feGaussianBlur stdDeviation="14"/></filter>
+<g id="house"><rect x="-45" y="-70" width="90" height="70" fill="#c79a62"/><polygon points="-58,-70 0,-120 58,-70" fill="#6e4b2a"/><rect x="-10" y="-45" width="20" height="45" fill="#2a1d13"/></g>
+</defs>
+<rect width="1280" height="720" fill="url(#gd)"/>
+<rect class="green" width="1280" height="720" fill="url(#gg)"/>
+<g class="sun"><circle cx="640" cy="150" r="90" fill="#ffb347" opacity=".55" filter="url(#bl)"/><circle cx="640" cy="150" r="46" fill="#ffb347"/><circle cx="640" cy="1090" r="34" fill="#e8ecff"/></g>
+<path class="hill" d="M0 520 L0 400 Q200 300 380 400 T760 380 T1100 390 T1280 360 V520Z"/>
+<rect class="ground" y="520" width="1280" height="200"/>
+<path class="crack" d="M60 560 l40 20 l30 -10 M300 600 l50 25 l40 -15 M520 570 l30 30 M1000 640 l50 -20 l30 20 M150 660 l60 15 M700 620 l40 25"/>
+<use href="#house" x="110" y="520"/><use href="#house" x="250" y="520"/>
+<g class="can" transform="translate(440,520)"><path d="M-6 0 L-4 -90 L4 -90 L6 0Z" fill="#4a3320"/><circle cx="0" cy="-110" r="34"/><circle cx="-24" cy="-92" r="22"/><circle cx="26" cy="-94" r="24"/></g>
+<g id="vs"></g>
+<!-- lazy man -->
+<g class="a3" transform="translate(330,520)"><rect x="-62" y="-32" width="124" height="9" fill="#6b4a2a"/><path d="M-55 -23v23M55 -23v23" stroke="#6b4a2a" stroke-width="6"/><ellipse cy="-44" rx="48" ry="12" fill="#e9e2d0"/><circle cx="-54" cy="-46" r="12" fill="#9a6a45"/><text class="z" x="-40" y="-70" font-size="22" fill="#fff">Z z z</text></g>
+<!-- signpost -->
+<g transform="translate(560,520)"><rect x="-4" y="-140" width="8" height="140" fill="#5b3d22"/>
+<path class="board" d="M-100,-124 L-86,-136 H12 V-112 H-86Z"/><text x="-40" y="-118" font-size="15" fill="#fff" text-anchor="middle">சோம்பல்</text>
+<path class="board" d="M-100,-92 L-86,-104 H12 V-80 H-86Z"/><text x="-40" y="-86" font-size="15" fill="#fff" text-anchor="middle">ஏமாற்றம்</text>
+<path class="board glow" d="M100,-60 L86,-72 H-12 V-48 H86Z"/><text x="42" y="-54" font-size="15" fill="#3a2500" text-anchor="middle" font-weight="600">முயற்சி</text></g>
+<path class="lit" pathLength="1" d="M565 528 H775" stroke="#ffd35a" stroke-width="8" stroke-linecap="round" fill="none"/>
+<!-- pit & water -->
+<g transform="translate(880,522)"><path class="pit" d="M-62 0 Q0 80 62 0Z" fill="#2a1d13"/><path class="water" d="M-62 0 Q0 80 62 0Z" fill="#3aa0d8"/>
+<rect class="jet" x="-7" y="-170" width="14" height="170" rx="7" fill="#9fdcff" opacity=".85"/>
+<circle class="dirt" cx="-40" cy="-2" r="5" fill="#6b4a2a" style="--x:-40px"/><circle class="dirt" cx="-50" cy="-2" r="4" fill="#6b4a2a" style="--x:-60px;animation-delay:.2s"/><circle class="dirt" cx="-35" cy="-2" r="3" fill="#6b4a2a" style="--x:-25px;animation-delay:.4s"/></g>
+<path class="canal" pathLength="1" d="M900 528 Q1020 548 1260 540" stroke="#3aa0d8" stroke-width="16" stroke-linecap="round" fill="none"/>
+<g id="crops"></g>
+<!-- hero -->
+<g transform="translate(800,520)">
+<path d="M-8 -8v8M8 -8v8" stroke="#6b4527" stroke-width="7" stroke-linecap="round"/>
+<polygon points="-18,-62 18,-62 15,-6 -15,-6" fill="#f5f0e4"/>
+<rect x="-16" y="-112" width="32" height="54" rx="12" fill="#9a6a45"/>
+<circle cy="-130" r="15" fill="#9a6a45"/><rect x="-15" y="-138" width="30" height="7" rx="3" fill="#fff"/>
+<g transform="translate(4,-100)"><g class="dig"><g transform="rotate(-35)"><line y1="-8" y2="86" stroke="#6b3f1d" stroke-width="5"/><line y2="38" stroke="#9a6a45" stroke-width="9" stroke-linecap="round"/><rect x="-11" y="84" width="22" height="24" rx="3" fill="#aab3b8"/></g></g></g></g>
+<g class="coins" id="coins"></g>
+<!-- orb -->
+<g class="orb"><circle r="70" fill="#ffb300" opacity=".7" filter="url(#bl)"/><circle class="core" r="26" fill="url(#go)"/><circle class="ring" r="30" fill="none" stroke="#ffe27a" stroke-width="3"/>
+<g class="bub" transform="translate(34,-74)"><rect width="132" height="36" rx="12" fill="#fff8e1"/><text x="66" y="25" font-size="17" text-anchor="middle" fill="#5a3a00" font-weight="600">வழி எங்கே?</text></g></g>
+<rect class="night" width="1280" height="720" fill="#0a1030"/>
+</svg>
+<div class="shade"></div><div class="dim"></div>
+<div class="kbar"><span class="w w3">ஆக்கம்</span><span class="w w2">அதர்வினாய்ச்</span><span class="w w2">செல்லும்</span><span class="w w1">அசைவிலா</span><span class="w w1">ஊக்க</span><span class="w w1">முடையா</span><span class="w w4">னுழை.</span></div>
+<div class="title"><small>திருக்குறள் · குறள் 594 · ஊக்கமுடைமை</small>
+<h1><span style="--i:1">ஆக்கம் அதர்வினாய்ச் செல்லும்</span><br><span style="--i:4">அசைவிலா ஊக்க முடையா னுழை.</span></h1>
+<em>Wealth finds its own way to the one whose effort never falters.</em></div>
+<div class="cap" id="cap"><b></b><i></i></div>
+<div class="panel"><h2>குறள் சொல்வது என்ன?</h2>
+<div class="row" style="--i:0"><u>ஆக்கம்</u><span>→</span><s>செல்வம், உயர்வு — பொன்னொளி<small>Wealth &amp; prosperity — the golden light</small></s></div>
+<div class="row" style="--i:1"><u>அதர்வினாய்ச் செல்லும்</u><span>→</span><s>வழி கேட்டுத் தானே வந்து சேரும்<small>Asks the way and arrives on its own</small></s></div>
+<div class="row" style="--i:2"><u>அசைவிலா ஊக்கம்</u><span>→</span><s>சோர்வற்ற விடாமுயற்சி — தோண்டிய கை<small>Unshaken, tireless effort — the digging hand</small></s></div>
+<div class="row" style="--i:3"><u>உழை</u><span>→</span><s>அவன் இருக்கும் இடம்<small>The place where such a person stands</small></s></div>
+<div class="end">முயற்சி இருக்கும் இடத்தை நோக்கியே செல்வம் வழி தேடி வரும்.</div></div>
+<div class="ctl"><button id="pp" title="Pause">❚❚</button><button id="vb" title="AI voice on/off">🔊</button><button id="rp" title="Replay">↻</button></div>
+<div class="bar" id="bar"></div>
+</div>
+<script src="script.js"></script>
+</body></html>
